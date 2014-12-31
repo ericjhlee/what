@@ -41,3 +41,5 @@ gem 'spring',        group: :development
 # Yelp gem for api use
 gem 'yelp', require: 'yelp'
 
+# User authentication
+gem 'sorcery'
