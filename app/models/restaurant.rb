@@ -9,13 +9,13 @@ class Restaurant
 	def yelp_api
 		@client = Yelp::Client.new({ consumer_key: 'z9ZJGiqysEN3lAmY_1avUA', 
 									  consumer_secret: 'my4TeKx3LvZMmb2h051vYI7Ppwo',
-									  token: 'dBSr4fnERdPHDGOy9BP6g0Dx9_0rsZqG',
-									  token_secret: 'goHBejF9NzBIJtKgunQ16EUVlb0'
+									  token: 'zXTKld36K2qyxfooinwZfet1sJFYJ8ZN',
+									  token_secret: 'LbkzfAK2mLVotnu5SARfcEE7uk4'
                       	  })
 	end
 
 	def food
-		@client.search('San Francisco', { term: 'food' })
+		@client.search('Vancouver', { term: 'restaurants' }, {radius_filter: 1000})
 	end
 
 end

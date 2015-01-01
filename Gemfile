@@ -37,6 +37,7 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'json'
 
 # Yelp gem for api use
 gem 'yelp', require: 'yelp'

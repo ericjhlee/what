@@ -1,6 +1,8 @@
 <h1>Restaurant#index</h1>
 <p>Find me in app/views/restaurant/index.html.erb</p>
 <% if @yelp %>
-	<%= @yelp %>
-	<%= @yelp.class %>
+	<% @yelp.each do |restaurant| %>
+    <%= restaurant.name %>
+    <%= restaurant.rating %>
+  <% end %>
 <% end %>
