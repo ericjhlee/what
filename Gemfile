@@ -44,3 +44,6 @@ gem 'yelp', require: 'yelp'
 
 # User authentication
 gem 'sorcery'
+
+# Google Maps API
+gem 'gmaps4rails'
