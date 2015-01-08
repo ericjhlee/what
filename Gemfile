@@ -47,3 +47,7 @@ gem 'sorcery'
 
 # Google Maps API
 gem 'gmaps4rails'
+
+gem 'geokit'
+
+gem 'pry'
