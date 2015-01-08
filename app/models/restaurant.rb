@@ -18,11 +18,13 @@ class Restaurant
 		@client.search('Vancouver', { term: 'restaurants' }, {radius_filter: 1000})
 	end
 
-	def test(coordinates)
+	def test(lat, lng)
 		params = { term: 'food',
-           limit: 5,
+           limit: 20,
            radius_filter: 1000
-         } 
+         }
+
+    coordinates = { latitude: lat, longitude: lng } 
 		
 		@client.search_by_coordinates(coordinates, params)
 	end

@@ -1,0 +1,38 @@
+<h1>WHAT!</h1>
+<p>Front end still under constructions</p>
+
+<script>
+function getGeoLocation() {
+  navigator.geolocation.getCurrentPosition(setGeoCookie);
+}
+
+function setGeoCookie(position) {
+  var cookie_val = position.coords.latitude + "|" + position.coords.longitude;
+  console.log(position.coords.latitude);
+  createCookie(cookie_val);
+}
+
+function createCookie(value) {
+   var date = new Date();
+   date.setTime(date.getTime()+(30*1000));
+   var expires = "; expires="+date.toGMTString();
+
+   document.cookie = "lat_lng="+value+expires;
+}
+</script>
+
+<%= link_to "Restaurant", restaurant_index_path %>	
+
+
+
+
+<!-- function getGeoLocation() {
+  navigator.geolocation.getCurrentPosition(setGeoCookie);
+}
+
+function setGeoCookie(position) {
+  var cookie_val = position.coords.latitude + "|" + position.coords.longitude;
+  document.cookie = "lat_lng=" + escape(cookie_val);
+  console.log(position.coords.latitude);
+}
+ -->
