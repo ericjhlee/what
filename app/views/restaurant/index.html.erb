@@ -10,7 +10,14 @@
 	    <%= restaurant.name %>
 	    <img src="<%= restaurant.rating_img_url %>"></br>
         <img src="<%= restaurant.image_url %>"></br>
-        <%= restaurant.distance %> m</br><br>
+        <%= (restaurant.distance / 1000).round(2) %> km</br><br>
+        
+        <p>
+            <%= restaurant.location.display_address[0] %>,
+            <%= restaurant.location.display_address[1] %>,
+            <%= restaurant.location.display_address[3] %>
+            <%= restaurant.location.display_address %>
+        </p>
 	</div>
   <% end %>
 <% end %>
