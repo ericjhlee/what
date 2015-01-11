@@ -15,6 +15,33 @@
  */
 
  body {
- 	background-image: url('../images/background.jpg');
+ 	background-image: url('background.jpg');
  	background-repeat: no-repeat;
+ 	background-size: 100%;
+ 	background-position: fixed;
+ 	background-attachment: fixed;
  }
+
+
+@font-face {
+	 font-family: 'cooperblack';
+	 src: url("Cooper Black Italic.eot") format('embedded-opentype'),
+		 url('Cooper Black Italic.woff') format('woff'),
+		 url('Cooper Black Italic.ttf') format('truetype'),
+		 url('Cooper Black Italicvg#') format('svg');
+	 font-weight:bold;
+	 font-style:normal;
+}
+
+ .title {
+ 	font-family: cooperblack;
+ 	color: white;
+ 	text-align: center;
+
+ }
+
+ .hover {
+	position: absolute;
+	border-style: solid;
+    border-color: #ff022c;
+}

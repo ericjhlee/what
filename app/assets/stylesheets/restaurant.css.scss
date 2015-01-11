@@ -1,3 +1,30 @@
 // Place all the styles related to the restaurant controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.restaurantPlate {
+	color: white;
+	font-family: cooperblack;
+	background-color: rgba(237,123,16, 0.83);
+	width: 50%;
+	text-align: center;
+	margin-top: 0.75em;	
+}
+
+.plate {
+	color: white;
+	font-family: cooperblack;
+	background-color: rgba(50, 75, 97, 0.93);
+	width: 50%;
+	text-align: center;
+	margin-top: 0.75em;	
+	border-radius: 50%;
+	margin-bottom: 0.5em;
+}
+
+
+.hover {
+	position: absolute;
+	border-style: solid;
+    border-color: #ff022c;
+}
