@@ -11,7 +11,7 @@
 	margin-top: 0.75em;	
 }
 
-.plate {
+/*.plate {
 	color: white;
 	font-family: cooperblack;
 	background-color: rgba(50, 75, 97, 0.93);
@@ -20,11 +20,79 @@
 	margin-top: 0.75em;	
 	border-radius: 50%;
 	margin-bottom: 0.5em;
+}*/
+
+.background {
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: fixed;
+ 	background-attachment: fixed;
+
+}
+
+.platebackground {
+	background-color: white;
+	width: 43%;
+	padding-bottom: 0.05em;
+	margin-bottom: 0.2em;
+
+}
+.sup {
+	border: black 2px; 
+
+}
+.plate {
+	position: relative;
+	height: 250px;
+	color: black;
+	font-family: cooperblack;
+	background-image: url('plate.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+	margin-bottom: 1em;
+}
+
+.highlight {
+	color: white;
+	font-family: cooperblack;
+	background-color: red;
+	width: 70%;
+	text-align: center;
+	border-radius: 50%;
+	margin: auto;
 }
 
 
-.hover {
-	position: absolute;
-	border-style: solid;
-    border-color: #ff022c;
+
+.nameRating {
+	margin: 0 10% 0 30%;
+	padding-top: 10px;
+	
 }
+
+.restaurantAddress {
+	margin-left: 30%;
+	margin-bottom: 5%;
+}
+
+.restaurantPhoto {
+	margin-left: 30%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

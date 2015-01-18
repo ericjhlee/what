@@ -17,7 +17,7 @@
  body {
  	background-image: url('background.jpg');
  	background-repeat: no-repeat;
- 	background-size: 100%;
+ 	background-size: cover;
  	background-position: fixed;
  	background-attachment: fixed;
  }
@@ -39,9 +39,3 @@
  	text-align: center;
 
  }
-
- .hover {
-	position: absolute;
-	border-style: solid;
-    border-color: #ff022c;
-}

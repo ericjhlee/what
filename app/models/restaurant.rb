@@ -29,16 +29,5 @@ class Restaurant
 		@client.search_by_coordinates(coordinates, params)
 	end
 
-	# def location
-	# 	if cookies[:lat_lng].split("|")[0] && cookies[:lat_lng].split("|")[1]
-	# 		lat = cookies[:lat_lng].split("|")[0]
- #  		lng = cookies[:lat_lng].split("|")[1]
-
- #  		coordinates = { latitude: lat, longitude: lng }
-
- #  		test(coordinates)
- #  	end
- #  end
-
 
 end

@@ -1,4 +1,3 @@
-
 <p>Front end still under constructions</p>
 
 <script>
@@ -14,11 +13,46 @@ function setGeoCookie(position) {
 
 function createCookie(value) {
    var date = new Date();
-   date.setTime(date.getTime()+(30*1000));
+   date.setTime(date.getTime()+(30*60*1000));
    var expires = "; expires="+date.toGMTString();
+   
 
    document.cookie = "lat_lng="+value+expires;
+   
+   // var currentCookie = "lat_lng="+value+expires;
+   // getCookie("lat_lng", currentCookie);
 }
+
+// function getCookie(cname, cookie) {
+//     var name = cname + "=";
+//     var ca = document.cookie.split(';');
+//     console.log(ca)
+//     for(var i=0; i<ca.length; i++) {
+//         var c = ca[i];
+//         console.log(ca[i])
+//         checkCookieValue(ca[i], cookie)
+//         while (c.charAt(0)==' ') c = c.substring(1);
+//         if (c.indexOf(name) == 0) {
+//           var locationCookie = c.substring(name.length,c.length);
+//         }
+//     }
+//     return "";
+
+    
+// }
+
+// function checkCookieValue(value1, value2) {
+//   if(value1 != value2){
+//     document.cookie = value1
+//     console.log('success');
+//   } else {
+//     console.log("failure");
+//   }
+// }
+
+
+
+getGeoLocation();
 </script>
 
 <%= link_to "Restaurant", restaurant_index_path %>	
