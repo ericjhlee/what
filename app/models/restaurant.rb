@@ -9,8 +9,8 @@ class Restaurant
 	def yelp_api
 		@client = Yelp::Client.new({ consumer_key: 'z9ZJGiqysEN3lAmY_1avUA', 
 									  consumer_secret: 'my4TeKx3LvZMmb2h051vYI7Ppwo',
-									  token: 'zXTKld36K2qyxfooinwZfet1sJFYJ8ZN',
-									  token_secret: 'LbkzfAK2mLVotnu5SARfcEE7uk4'
+									  token: 'Ugt0RjpcYSnxwvZNAQWelSYUnAS-qoq7',
+									  token_secret: 'aboWTvetW-IQe0JMkXJBUGUo428'
                       	  })
 	end
 
