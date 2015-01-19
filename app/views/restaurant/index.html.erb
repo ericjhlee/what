@@ -34,7 +34,6 @@
 
 <script type="text/javascript">
 $(function () {
-    $(window).load(function(){
     $('img.backgroundImages').hide();
     var dg_H = $(window).height();
     var dg_W = $(window).width();
@@ -46,8 +45,8 @@ $(function () {
         $("#restaurantBackgrounds img").first().fadeIn(1500);
         setTimeout(animBackground, 3000);
     }
-    animBackground();})
+    animBackground();
     $(window).resize(function(){window.location.href=window.location.href})
-
 });
+
 </script>
